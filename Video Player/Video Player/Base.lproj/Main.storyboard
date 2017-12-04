@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Video_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 7 Plus.png" translatesAutoresizingMaskIntoConstraints="NO" id="FzG-Aa-YcC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07k-55-3gc">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.16358893691892429" green="1" blue="0.60952699039293889" alpha="0.19103167808219179" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Go to the video">
+                                    <color key="titleColor" red="0.16358893690000001" green="1" blue="0.60952699040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5YA-AI-VPX" kind="modal" id="UjH-Gj-ms3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="07k-55-3gc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Bc-NQ-UaY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="07k-55-3gc" secondAttribute="bottom" constant="20" id="9Ui-gi-VDv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FzG-Aa-YcC" secondAttribute="bottom" id="Ic5-zQ-9sr"/>
+                            <constraint firstAttribute="trailing" secondItem="FzG-Aa-YcC" secondAttribute="trailing" id="QNf-iz-3Bz"/>
+                            <constraint firstItem="FzG-Aa-YcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dtf-uB-Xxn"/>
+                            <constraint firstItem="07k-55-3gc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="597" id="gqh-C2-XtX"/>
+                            <constraint firstItem="FzG-Aa-YcC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sCg-wR-CYN"/>
+                            <constraint firstItem="07k-55-3gc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="w8d-Zd-NKF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.399999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="PCw-wP-5VX">
+            <objects>
+                <viewController id="5YA-AI-VPX" customClass="VideoPlayerViewController" customModule="Video_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vjp-fZ-ClS"/>
+                        <viewControllerLayoutGuide type="bottom" id="eG0-Bx-daa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbz-m6-vmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdz-17-GHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iPhone 7 Plus.png" width="414" height="736"/>
+    </resources>
+</document>
